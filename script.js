@@ -10,7 +10,7 @@ function shareFunction(e){
 e.preventDefault()
         
         shareWrapper.innerHTML =''
-
+        if(userNameField.value && repoField.value && nameField.value){
         const shareDiv = document.createElement('div')
         shareDiv.id = 'share-div'
         const copyButton = document.createElement('button')
@@ -34,6 +34,14 @@ e.preventDefault()
             },900)
 
          })
-
+        }
+        else {
+            shareBtn.innerText = 'Make sure you fill the form!'
+            shareBtn.style.backgroundColor = 'coral'
+            setTimeout(function(){
+                shareBtn.innerText = 'Share'
+                shareBtn.style.backgroundColor = null;
+            },2000)
+        }
 }
 

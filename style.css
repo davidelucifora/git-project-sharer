@@ -30,7 +30,7 @@ h1{
 #input{
     display:flex;
     flex-flow:column wrap;
-    min-width:20vw;
+    min-width:25vw;
 }
 form{
     display:flex;
@@ -79,13 +79,14 @@ input[type="reset"]{
     background-color:#ddd;
     display:flex;
     flex-flow:column wrap;
-    padding:2rem;
+    justify-content:center;
+    padding:3rem;
     box-shadow:0 1px 1px rgba(255,255,255,0.3), 
     4px 4px 6px var(--indigo-dye), 
     6px 6px 20px var(--indigo-dye);
 }
 #share-div > p{
-    font-size:1.3rem;
+    font-size:1.2rem;
     color:var(--indigo-dye);
 
 }
