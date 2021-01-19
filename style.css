@@ -1,0 +1,130 @@
+
+:root{
+    --gunmetal: hsla(194, 49%, 14%, 1);
+    --indigo-dye: hsla(211, 53%, 29%, 1);
+    --dark-cornflower-blue: hsla(225, 56%, 37%, 1);
+    --carolina-blue: hsla(202, 65%, 58%, 1);
+    --medium-turquoise: hsla(178, 59%, 54%, 1);
+
+}
+body{
+    
+    background-color:var(--gunmetal);
+    color:white;
+    font-weight:500;
+}
+    #container{
+    display:flex;
+    flex-flow:column wrap;
+    align-items:center;
+    height:90vh;
+    font-family:Arial, Helvetica, sans-serif;
+}
+h1{
+    display:flex;
+    align-self:center;
+    margin-bottom:10vh;
+    font-size:3rem;
+    font-weight:100;
+}
+#input{
+    display:flex;
+    flex-flow:column wrap;
+    min-width:20vw;
+}
+form{
+    display:flex;
+    flex-flow:column wrap;
+}
+label{
+    display:flex;
+    flex-direction:column;
+    margin-top:1rem;
+    margin-bottom:0;
+    color:white;
+    font-weight:10;
+}
+p{
+    margin-top:0.1rem;
+    color:white;
+    font-size:0.9rem;
+}
+input{
+    margin-top:0.3rem;
+    height:3rem;
+}
+input[type="reset"]{
+    border:none;
+    background-color:#DDD;
+    cursor:pointer;
+    transition:0.2s;
+    margin-top:2rem;
+}
+#content{
+    display:flex;
+    align-items:center;
+    flex-flow:row wrap;
+    max-width:100%;
+}
+#share-wrapper{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-evenly;
+    max-width:70vw;
+    margin-left:2rem;
+}
+#share-div{
+    margin-left:2rem;
+    border-radius:0.5rem;
+    background-color:#ddd;
+    display:flex;
+    flex-flow:column wrap;
+    padding:2rem;
+    box-shadow:0 1px 1px rgba(255,255,255,0.3), 
+    4px 4px 6px var(--indigo-dye), 
+    6px 6px 20px var(--indigo-dye);
+}
+#share-div > p{
+    font-size:1.3rem;
+    color:var(--indigo-dye);
+
+}
+input[type="reset"]:hover{
+    cursor:pointer;
+    background-color:coral;
+}
+button{
+    margin-top:0.3rem;
+    height:3rem;
+    border:none;
+    background-color:var(--carolina-blue);
+    font-size:1.2rem;
+    color:white;
+    transition:0.2s;
+}
+button:hover{
+    background-color:var(--medium-turquoise);
+    color:var(--indigo-dye);
+    cursor:pointer;
+}
+a{
+    font-weight:10;
+    color:var(--carolina-blue);
+    text-decoration:none;
+
+}
+
+@media (max-width:760px){
+#container{
+    flex-flow:column;
+    
+}
+h1{
+    font-size:30px;
+}
+form{
+    width:80vw;
+}
+}
+
+
