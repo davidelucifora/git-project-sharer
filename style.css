@@ -114,6 +114,10 @@ a{
     text-decoration:none;
 
 }
+span.credits{
+    font-size:0.8rem;
+    line-height:0.8;
+}
 
 @media (max-width:760px){
 #container{

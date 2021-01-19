@@ -23,11 +23,12 @@ e.preventDefault()
         resultParagraph.innerHTML = `Hi! Just finished working on my <span>${nameField.value}</span> project! <br><br>
 
          Live: <a href="https://${userNameField.value}.github.io/${repoField.value}/">https://${userNameField.value}.github.io/${repoField.value}/</a><br>
-         Code: <a href="https://github.com/${userNameField.value}/${repoField.value}/">https://github.com/${userNameField.value}/${repoField.value}/</a><br>`
+         Code: <a href="https://github.com/${userNameField.value}/${repoField.value}/">https://github.com/${userNameField.value}/${repoField.value}/</a><br><br>
+         `
 
          copyButton.addEventListener('click', function(){
              let value = resultParagraph.innerText
-            navigator.clipboard.writeText(value)
+            navigator.clipboard.writeText(value + '\n\nShared using Git Sharer: http://dalux21.github.io/git-project-sharer')
             this.innerText ="Copied!"
             setTimeout(function(){
                 copyButton.innerText = "Copy to Clipboard"
